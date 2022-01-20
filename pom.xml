@@ -29,6 +29,7 @@
                         <uri>https://anypoint.mulesoft.com</uri>
                         <muleVersion>4.2.2</muleVersion>
                         <username>Kasyap_Netrovert</username>
+                        <businessGroup>Training and Development</businessGroup>
                         <password>Netrovert1!</password>
                         <applicationName>univ1sapi-kkg</applicationName>
                         <environment>Sandbox</environment>
