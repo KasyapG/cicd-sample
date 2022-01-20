@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="univ1-Implementation" doc:id="60015514-9ef2-45af-89c3-ae49433cc1bb" >
+		<logger level="INFO" doc:name="Start Log" doc:id="fe2ff860-c16b-4b2a-a842-4cd56b6fd695" message="Getting MDX university details" />
+		<db:select doc:name="Get mdx details" doc:id="2443decb-0241-4993-940d-189ccc81a24c" config-ref="Database_Config">
+			<db:sql><![CDATA[select * from university;]]></db:sql>
+		</db:select>
+		<ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="5b2559ce-805c-4bf5-bde0-bea5ad70a566">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload map ( payload01 , indexOfPayload01 ) -> {
+	ID: payload01.ID as Number,
+	mdxCode: payload01.mdxCode default "",
+	branchName: payload01.branchName default "",
+	streetName: payload01.streetName default "",
+	city: payload01.city default "",
+	state: payload01.state default "",
+	postalCode: payload01.postalCode default "",
+	country: payload01.country default ""
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+		<logger level="INFO" doc:name="End Log" doc:id="178febe0-b51b-403b-813d-552684d54819" message="Details sent" />
+	</flow>
+</mule>

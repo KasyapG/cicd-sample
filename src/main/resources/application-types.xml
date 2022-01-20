@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="mdxexample" format="json">
+      <types:shape format="weave" example="examples/mdxexample.json"><![CDATA[%dw 2.0
+
+type mdxexample = Array<{|  ID: String,   mdxCode: String,   branchName: String,   streetName: String,   city: String,   state: String,   postalCode: String,   country: String|}> {"example": "[{\\\"ID\\\":\\\"1\\\",\\\"mdxCode\\\":\\\"MDX\\\",\\\"branchName\\\":\\\"North London\\\",\\\"streetName\\\":\\\"Old Street\\\",\\\"city\\\":\\\"London\\\",\\\"state\\\":\\\"England\\\",\\\"postalCode\\\":\\\"NW2YA\\\",\\\"country\\\":\\\"UK\\\"},{\\\"ID\\\":\\\"1\\\",\\\"mdxCode\\\":\\\"MDX\\\",\\\"branchName\\\":\\\"North London\\\",\\\"streetName\\\":\\\"Old Street\\\",\\\"city\\\":\\\"London\\\",\\\"state\\\":\\\"England\\\",\\\"postalCode\\\":\\\"NW2YA\\\",\\\"country\\\":\\\"UK\\\"}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#5b2559ce-805c-4bf5-bde0-bea5ad70a566">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="mdxexample"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

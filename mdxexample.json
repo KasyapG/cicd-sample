@@ -1,0 +1,22 @@
+ [
+	{
+      "ID" : "1",
+      "mdxCode" : "MDX",
+      "branchName" : "North London",
+      "streetName" : "Old Street",
+      "city" : "London",
+      "state" : "England",
+      "postalCode" : "NW2YA",
+      "country":"UK"
+    },
+    {
+      "ID" : "1",
+      "mdxCode" : "MDX",
+      "branchName" : "North London",
+      "streetName" : "Old Street",
+      "city" : "London",
+      "state" : "England",
+      "postalCode" : "NW2YA",
+      "country":"UK"
+    }    
+  ]
