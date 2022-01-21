@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>5886fa27-e81b-4ba8-af06-a7fe65a49c5b</groupId>
+  <artifactId>accounts-api-kkg</artifactId>
+  <version>1.0.3</version>
+  <name>accounts api-kkg</name>
+  <properties>
+    <classifier>raml</classifier>
+    <main>accounts-api-kkg.raml</main>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <apiVersion>v1</apiVersion>
+    <projectId>386ab81e-0260-41fa-91da-e7a75ae28117</projectId>
+    <branchId>master</branchId>
+    <commitId>2b81a81a0299c7639d1a857d8878e1f86b62f22e</commitId>
+    <keywords/>
+    <type>rest-api</type>
+    <mainFile>accounts-api-kkg.raml</mainFile>
+  </properties>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>

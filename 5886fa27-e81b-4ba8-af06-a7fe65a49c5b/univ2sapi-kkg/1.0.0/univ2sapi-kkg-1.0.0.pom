@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>5886fa27-e81b-4ba8-af06-a7fe65a49c5b</groupId>
+  <artifactId>univ2sapi-kkg</artifactId>
+  <version>1.0.0</version>
+  <name>Univ2Sapi-kkg</name>
+  <properties>
+    <classifier>raml</classifier>
+    <main>univ2sapi-kkg.raml</main>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <apiVersion>1.0</apiVersion>
+    <projectId>7b975895-5f24-403f-bdb2-5378e6415953</projectId>
+    <branchId>master</branchId>
+    <commitId>41ffbb689c83b73386a9bb4ca2cefe8d118e73b1</commitId>
+    <keywords/>
+    <type>rest-api</type>
+    <mainFile>univ2sapi-kkg.raml</mainFile>
+  </properties>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>
