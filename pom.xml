@@ -75,7 +75,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>https://anypoint.mulesoft.com/exchange/5886fa27-e81b-4ba8-af06-a7fe65a49c5b/</groupId>
+			<groupId>5886fa27-e81b-4ba8-af06-a7fe65a49c5b</groupId>
 			<artifactId>univ1sapi-kkg</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
