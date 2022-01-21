@@ -27,13 +27,14 @@
                 <configuration>
                     <cloudHubDeployment>
                         <uri>https://anypoint.mulesoft.com</uri>
-                        <muleVersion>4.2.2</muleVersion>
+                        <muleVersion>4.4.0</muleVersion>
                         <username>Kasyap_Netrovert</username>
-                        <businessGroup>Training and Development</businessGroup>
                         <password>Netrovert1!</password>
+                        <businessGroup>Training and Development</businessGroup>                        
                         <applicationName>univ1sapi-kkg</applicationName>
                         <environment>Sandbox</environment>
                         <workerType>MICRO</workerType>
+                        <workers>1</workers>
                         <objectStoreV2>true</objectStoreV2>
                     </cloudHubDeployment>
                 </configuration>
